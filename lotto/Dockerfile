@@ -7,6 +7,4 @@ RUN pip3 install flask
 EXPOSE 5000
 WORKDIR /app
 
-ENTRYPOINT ["python3"]
-
-CMD ["app.py"]
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
